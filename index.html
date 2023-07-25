@@ -9,26 +9,110 @@
 </head>
 <body>
 
-<h1>Wunschliste</h1> 
 
-<h2>Hochzeit von Jina und Robin<h2>
-<p style="font-family: 'Times New Roman', Times, serif;"></p>
-
+<head>
+<title>CSS Template</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
-    body {
-      background-image: url('images/bild2.jpg');
-      background-repeat: no-repeat;
-    }
-    </style>
-    
-</style> 
-<ul>
-    <li>Esszimmertisch <a href="https://www.home24.de/produkt/esstisch-fjord-iv-kiefer-massiv-kiefer-weiss-kiefer-bernstein-120-x-78-cm">Beispiellink Esszimmer</a></li> 
-    <li>Ein Familienbett <a href="https://www.betten.de/schubkasten-balkenbett-fichte-rustikale-maserung-barup.html?1215-0054-004&cpkey=HLmTT1yHxCz-sDwz2Ve8f85T_PKEZo7jbH7JIToTjZwkp8Ys1yVMUFTQD0UKVYOHbQOkH-Xt1Vfyd0vldpU1FQ~~&gclid=EAIaIQobChMI6tm8_-mhgAMVg4toCR1MMQndEAQYAyABEgKkZvD_BwE">Bettlink</a></li>
-<li>Flitterwochen Geld/Gutschein</li>
+* {
+  box-sizing: border-box;
+}
 
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-image: url(images/bild2.jpg);
+  background-repeat: no-repeat;
+}
+
+/* Style the header */ 
+header {
+   
+  background-color: #5e99be;
+  padding: 25px;
+  text-align: center;
+  font-size: 70px;
+  color: white;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 15%;
+  height: 200px; /* only for demonstration, should be removed */
+  background: #7fa3dad0;
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 70%;
+  background-color: #f1f1f1c7;
+  height: 200px; /* only for demonstration, should be removed */
+}
+
+/* Clear floats after the columns */
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  background-color: #777;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 800px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+</style>
+</head>
+<body>
+
+
+
+<header>
+  <h1>Wunschlisten</h1>
+</header>
+
+<section>
+  <nav>
+    <ul>
+      <li><a href="Hochzeit.html"><h3>Hochzeit</h3></a></li> 
+
+      <li><a href="baby.html"><h3>Baby</h3></a></li>
+       <head>
+  <link rel="stylesheet" href url="Hochzeit">
+</head> 
     </ul>
+  </nav>
+  
+  <article>
+    <h2>Herzlich Wilkommen!</h2>
+    <p> </p>
+    <p>Wir freuen uns sehr,am 19. August 2023 unsere Standesamtliche Hochzeit in Karlsruhe mit euch zu feiern.</p>
+    <p>Falls ihr uns etwas schenken möchtet, haben wir ein paar Geschenkideen aufgelistet.
 
+    </p>
+
+    </p>
+  </article>
+</section>
 
 </body>
 </html>
