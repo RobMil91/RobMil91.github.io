@@ -10,7 +10,109 @@
 <body>
 
 
-<h2> Wunschliste</h2>
 
 </body>
 </html>
+<p>
+
+
+
+ <head>
+    <title>CSS Template</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+    * {
+      box-sizing: border-box;
+    }
+    
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      
+    }
+    
+    /* Style the header */ 
+    header {
+       
+      background-color: #236e40c9;
+      padding: 25px;
+      text-align: center;
+      font-size: 70px;
+      color: rgb(2, 0, 1);
+    }
+    
+    /* Create two columns/boxes that floats next to each other */
+    nav {
+      float: left;
+      width: 15%;
+      height: 200px; /* only for demonstration, should be removed */
+      background: #7fa3dad0;
+      padding: 20px;
+    }
+    
+    /* Style the list inside the menu */
+    nav ul {
+      list-style-type: none;
+      padding: 0;
+    }
+    
+    article {
+      float: left;
+      padding: 20px;
+      width: 70%;
+      background-color: #9dd4bb8c;
+      height: 1000px; /* only for demonstration, should be removed */
+    }
+    
+    /* Clear floats after the columns */
+    section::after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+    
+    /* Style the footer */
+    footer {
+      background-color: #777;
+      padding: 10px;
+      text-align: center;
+      color: white;
+    }
+    
+    /* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+    @media (max-width: 800px) {
+      nav, article {
+        width: 100%;
+        height: auto;
+      }
+    }
+    </style>
+    </head>
+    <body>
+    
+    
+    
+    <header>
+      <h1>Hochzeits Wunschliste</h1>
+    </header>
+    
+        
+    </head> 
+        </ul>
+      </nav>
+      
+      <article>
+        
+        <p> <h2>Familienbett <a href="https://www.familienbett.at/familienbett-270x200-pico-dunkel-gewachst">Bettlink</a>
+             <h2>Esstisch und Stühle <a href="https://www.home24.de/produkt/esstisch-fjord-iv-kiefer-massiv-kiefer-weiss-kiefer-bernstein-140-x-90-cm">Esstisch</a>
+                    <a href="https://www.home24.de/produkt/esszimmerstuhl-bergen-2er-set-kiefer-massiv-kiefer-weiss-kiefer-bernstein">Stühle Weiß</a>
+                    <a href="https://www.home24.de/produkt/armlehnenstuhl-nicholas-webstoff-cors-mintgrau-2er-set"> Stühle Mint</a>
+            <h2>Geldgeschenk: für die Flitterwochen</h2></p>
+        
+    
+        </p>
+      </article>
+    </section>
+    
+    </body>
+    </html>
